@@ -4,12 +4,6 @@
     <jsp:include page="/Layout/headerManagerReply.jsp"/>
 
 <style>
-	main{
-		height: 300px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
 </style>
 <main>
 	<form action="replyWrite"  method="post">

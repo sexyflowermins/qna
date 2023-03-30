@@ -4,18 +4,6 @@
 
 <jsp:include page="/Layout/header.jsp"/>
 <style>
-	main{
-		display: flex;
-		padding: 20px;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-	}
-	main form{
-	width: 100%;
-	border: 1px solid black;
-	padding: 10px;
-	}
 </style>
 <main>
 	<form action="signup" method="post">

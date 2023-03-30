@@ -1,17 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%
+	String useremail = (String)session.getAttribute("useremail");
+	String password = (String)session.getAttribute("password");
+	
+%>
 <jsp:include page="/Layout/headerManager.jsp"/>
 
 <style>
-	main{
-		height: 300px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
 </style>
 <main>
+    <%= useremail %>
 	관리자 시작화면 입니다
 </main>
 

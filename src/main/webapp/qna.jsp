@@ -1,6 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%
+	String useremail = (String)session.getAttribute("useremail");
+	String password = (String)session.getAttribute("password");
+	
+%>
 <jsp:include page="/Layout/headerQna.jsp"/>
 <main>
 	<form action="qnaUpLoad" method="post">
@@ -11,7 +15,7 @@
 	<input type="text" name="content" id="content">
 
 	<label>이메일 : </label>
-	<input type="email" name="email" id="email">
+	<input type="email" name="email" id="email" value="<%= useremail%>">
 	<button type="submit">질문하기</button>
 	</form>
 </main>

@@ -13,6 +13,6 @@
 		<ul>
 			<li><a href="/qna/qna.jsp"> 질문하기</a></li>
 			<li><a href="/qna/replySelect.jsp"> 답변 확인 하기</a></li>
-			<li><a href="/qna/index.jsp"> 로그아웃</a></li>			
+			<li><a href="/qna/logout.jsp"> 로그아웃</a></li>			
 		</ul>
 	</nav>

@@ -40,20 +40,18 @@ public class QnaDAO {
 
 	public QnaDTO selectReply(String title, String email) {
 		QnaDTO resultUser = null;
-		String sql = " SELECT reply " 
-						+ " FROM board " 
-							+ " WHERE title = ? AND user_email = ? ";
+		String sql = " SELECT reply " + " FROM board " + " WHERE title = ? AND user_email = ? ";
 		try {
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, title);
 			pstmt.setString(2, email);
 			rs = pstmt.executeQuery();
-			while(rs.next()) {
+			while (rs.next()) {
 				System.out.println(111111111);
-			QnaDTO qnaDTO = new QnaDTO();
-			qnaDTO.setReply(rs.getString("reply"));
-			
-			resultUser = qnaDTO;
+				QnaDTO qnaDTO = new QnaDTO();
+				qnaDTO.setReply(rs.getString("reply"));
+
+				resultUser = qnaDTO;
 			}
 		} catch (Exception e) {
 			System.out.println(">> 답변 보기 select에서 에러발생");
@@ -61,22 +59,22 @@ public class QnaDAO {
 		}
 		return resultUser;
 	}
-	
+
 	public ArrayList<QnaDTO> selectReplyList() {
 		ArrayList<QnaDTO> list = new ArrayList<>();
-		String sql = " SELECT *  FROM board "; 
+		String sql = " SELECT *  FROM board ";
 
 		try {
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
-			while(rs.next()) {
-			QnaDTO qnaDTO = new QnaDTO();
-			qnaDTO.setId(rs.getInt("id"));
-			qnaDTO.setTitle(rs.getString("title"));
-			qnaDTO.setContent(rs.getString("Content"));
-			qnaDTO.setReply(rs.getString("reply"));
-			qnaDTO.setUserEmail(rs.getString("user_email"));
-			list.add(qnaDTO);
+			while (rs.next()) {
+				QnaDTO qnaDTO = new QnaDTO();
+				qnaDTO.setId(rs.getInt("id"));
+				qnaDTO.setTitle(rs.getString("title"));
+				qnaDTO.setContent(rs.getString("Content"));
+				qnaDTO.setReply(rs.getString("reply"));
+				qnaDTO.setUserEmail(rs.getString("user_email"));
+				list.add(qnaDTO);
 			}
 		} catch (Exception e) {
 			System.out.println(">> 질문 전체 select에서 에러발생");
@@ -84,12 +82,10 @@ public class QnaDAO {
 		}
 		return list;
 	}
-	
-	public int replyWrite(String reply, String id ) {
+
+	public int replyWrite(String reply, String id) {
 		int resultRowCount = 0;
-		String queryStr = " UPDATE board "
-									+ " SET reply = ? "
-									+ " WHERE id = ?  ";
+		String queryStr = " UPDATE board " + " SET reply = ? " + " WHERE id = ?  ";
 		PreparedStatement pStmt = null;
 		try {
 			System.out.println("333333333333");
@@ -99,7 +95,7 @@ public class QnaDAO {
 			resultRowCount = pStmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
-		}finally {
+		} finally {
 			try {
 				pStmt.close();
 			} catch (SQLException e) {
@@ -109,5 +105,5 @@ public class QnaDAO {
 		System.out.println(resultRowCount);
 		return resultRowCount;
 	}
-	
+
 }

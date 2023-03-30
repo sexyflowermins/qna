@@ -1,18 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%
+	String useremail = (String)session.getAttribute("useremail");
+	String password = (String)session.getAttribute("password");
+	
+%>
 <jsp:include page="/Layout/headerlogin.jsp"/>
 
 <style>
-	main{
-		height: 300px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+main{
+	font-size: 50px;
+}
 </style>
 <main>
-	로그인후 시작화면 입니다
+	<%= useremail %>
+	로그인이 되었습니다, 질문과 답을 받아보세요!
 </main>
 
 <jsp:include page="/Layout/footer.jsp"/>
