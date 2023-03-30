@@ -1,0 +1,51 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@page import="java.util.TimeZone"%>
+<%@page import="java.util.Date"%>
+<%
+
+%>
+
+
+<jsp:include page="/Layout/header.jsp"/>
+<style>
+	main{
+	background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 600px
+	}
+	form{
+		background-color: #A4E962;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid black;
+		border-radius: 20px;
+		width: 300px;
+		height: 300px;
+	}
+</style>
+<main>
+	<form action="login" method="post">
+	<label>이메일 : </label>
+	<input type="email" name="id" id="id">
+
+	<label>비밀번호 : </label>
+	<input type="password" name="password" id="password">
+
+	<button type="submit">로그인</button>
+	</form>
+</main>
+
+<jsp:include page="/Layout/footer.jsp"/>
+

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*웹 폰트 불러오기*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+/*폰트 적용하기*/
+body{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+/* ul 태그 초기화*/
+ul{
+	display: flex;
+	margin: 0;
+	padding: 30px;
+	list-style: none;
+	background-color: #f5f5f5;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+ul li{
+	margin-top: 15px;
+	margin-right: 15px;
+	border: 1px solid #f5f5f5;
+	padding: 15px;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+ul li a{
+	color: #333;
+	text-decoration: none;
+	font-size: 16px;
+}
+.footer{
+        background-color: green;
+        display: grid;
+        grid-template-columns:100px 4fr 3fr 200px;
+        padding: 2% 2%;
+    }
+.footer_1{
+         grid-column-start: 2; 
+    }
+.footer_2{
+        grid-column-start: 3; 
+    }
+footer > div > div >  p{
+        display: inline-block;
+        margin: 5px 10px;
+        color: whitesmoke;
+    } 
+footer > div > div >  h2{
+       display: inline-block;
+    }
+.p_footer_bw{
+        font-weight:  bold;
+        font-size: 18px;
+        color: rgb(192, 190, 190);
+    }
