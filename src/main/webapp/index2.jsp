@@ -4,6 +4,9 @@
 	String useremail = (String)session.getAttribute("useremail");
 	String password = (String)session.getAttribute("password");
 	
+	if (useremail == null && password == null) {
+	    out.println("<script>alert('로그인이 필요합니다'); location.href='login.jsp'</script>");
+	}
 %>
 <jsp:include page="/Layout/headerlogin.jsp"/>
 

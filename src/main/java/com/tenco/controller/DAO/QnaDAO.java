@@ -83,6 +83,32 @@ public class QnaDAO {
 		return list;
 	}
 
+	public ArrayList<QnaDTO> selectMyQnaList(String useremail) {
+		ArrayList<QnaDTO> list = new ArrayList<>();
+		String sql = " SELECT *  FROM board "
+							+ " WHERE user_email = ? ";
+
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1,useremail);
+			rs = pstmt.executeQuery();
+			while (rs.next()) {
+				System.out.println(111111);
+				QnaDTO qnaDTO = new QnaDTO();
+				qnaDTO.setId(rs.getInt("id"));
+				qnaDTO.setTitle(rs.getString("title"));
+				qnaDTO.setContent(rs.getString("Content"));
+				qnaDTO.setReply(rs.getString("reply"));
+				qnaDTO.setUserEmail(rs.getString("user_email"));
+				list.add(qnaDTO);
+			}
+		} catch (Exception e) {
+			System.out.println(">> 내 질문 전체 select에서 에러발생");
+			e.printStackTrace();
+		}
+		return list;
+	}
+	
 	public int replyWrite(String reply, String id) {
 		int resultRowCount = 0;
 		String queryStr = " UPDATE board " + " SET reply = ? " + " WHERE id = ?  ";
