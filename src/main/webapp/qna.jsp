@@ -3,9 +3,13 @@
 <%
 	String useremail = (String)session.getAttribute("useremail");
 	String password = (String)session.getAttribute("password");
-	
 %>
 <jsp:include page="/Layout/headerQna.jsp"/>
+<style>
+main{
+		height: 600px;
+}
+</style>
 <main>
 	<form action="qnaUpLoad" method="post">
 	<label>제목 : </label>

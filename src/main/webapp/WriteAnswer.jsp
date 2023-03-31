@@ -2,8 +2,11 @@
     pageEncoding="UTF-8"%>
 
     <jsp:include page="/Layout/headerManagerReply.jsp"/>
-
+	
 <style>
+main{
+	height: 600px;
+}
 </style>
 <main>
 	<form action="replyWrite"  method="post">

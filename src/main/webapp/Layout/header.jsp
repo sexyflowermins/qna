@@ -9,6 +9,7 @@
 <link rel="stylesheet"  href= "/qna/css/footer.css">
 </head>
 <body>
+
 	<nav>
 		<ul>
 			<li><a href="/qna/singup.jsp"> 회원가입</a></li>

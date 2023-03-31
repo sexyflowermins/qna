@@ -3,23 +3,21 @@
 <%
 	String useremail = (String)session.getAttribute("useremail");
 	String password = (String)session.getAttribute("password");
-	
 %>
-<jsp:include page="/Layout/headerReply.jsp"/>
+<jsp:include page="/Layout/headerQna.jsp"/>
 <style>
 main{
 		height: 600px;
 }
 </style>
 <main>
-	<form action="reply" method="get">
-	<label>질문 제목 : </label>
+	<form action="replyDelete" method="post">
+	<label>제목 : </label>
 	<input type="text" name="title" id="title">
 
-	<label>이메일 확인: </label>
-	<input type="email" name="email" id="email" value="<%=useremail %>">
-	<button type="submit">답변 확인 하기</button>
+	<label>이메일 : </label>
+	<input type="email" name="email" id="email" value="<%= useremail%>">
+	<button type="submit">삭제 하기</button>
 	</form>
 </main>
-
 <jsp:include page="/Layout/footer.jsp"/>

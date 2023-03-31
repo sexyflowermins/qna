@@ -12,6 +12,6 @@
 	<nav>
 		<ul>
 			<li><a href="/qna/replyList"> 질문 확인 하기</a></li>
-			<li><a href="/qna/index.jsp">로그아웃하기</a></li>			
+			<li><a href="/qna/logoutManager.jsp">로그아웃하기</a></li>			
 		</ul>
 	</nav>

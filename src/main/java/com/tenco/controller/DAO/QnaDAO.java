@@ -105,5 +105,20 @@ public class QnaDAO {
 		System.out.println(resultRowCount);
 		return resultRowCount;
 	}
-
+	
+	public int delete(String title, String email) {
+		int resultRow = 0;
+		String sql = " DELETE FROM board " 
+							+ " Where title = ? AND user_email = ? ";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, title);
+			pstmt.setString(2, email);
+			resultRow = pstmt.executeUpdate();
+		} catch (Exception e) {
+			System.out.println(">> delete에서 에러발생");
+			e.printStackTrace();
+		}
+		return resultRow;
+	}
 }

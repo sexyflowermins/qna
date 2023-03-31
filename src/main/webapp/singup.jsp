@@ -4,6 +4,9 @@
 
 <jsp:include page="/Layout/header.jsp"/>
 <style>
+main{
+	height: 600px;
+}
 </style>
 <main>
 	<form action="signup" method="post">

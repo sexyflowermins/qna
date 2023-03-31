@@ -8,6 +8,9 @@
 <jsp:include page="/Layout/headerManager.jsp"/>
 
 <style>
+	main{
+		height: 600px;
+	}
 </style>
 <main>
     <%= useremail %>

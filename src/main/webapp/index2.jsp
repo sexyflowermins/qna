@@ -10,6 +10,7 @@
 <style>
 main{
 	font-size: 50px;
+	height: 600px;
 }
 </style>
 <main>

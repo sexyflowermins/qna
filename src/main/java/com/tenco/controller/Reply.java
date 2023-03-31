@@ -33,6 +33,7 @@ public class Reply extends HttpServlet {
 		String userEmail = request.getParameter("email");
 		result = dao.selectReply(title, userEmail);	
 		PrintWriter out = response.getWriter();
+		System.out.println(result);
 		if(result != null) {
 			request.setAttribute("reply", result);
 			RequestDispatcher dispatcher = request.getRequestDispatcher("reply.jsp");
