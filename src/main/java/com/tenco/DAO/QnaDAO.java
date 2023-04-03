@@ -1,4 +1,4 @@
-package com.tenco.controller.DAO;
+package com.tenco.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,9 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import com.tenco.controller.BDHelper.DBHelper;
-import com.tenco.controller.DTO.QnaDTO;
-import com.tenco.controller.DTO.SoloDTO;
+import com.tenco.BDHelper.DBHelper;
+import com.tenco.DTO.QnaDTO;
 
 public class QnaDAO {
 
@@ -38,12 +37,12 @@ public class QnaDAO {
 		return resultRow;
 	};
 
-	public QnaDTO selectReply(String title, String email) {
+	public QnaDTO selectReply(String id, String email) {
 		QnaDTO resultUser = null;
-		String sql = " SELECT reply " + " FROM board " + " WHERE title = ? AND user_email = ? ";
+		String sql = " SELECT reply " + " FROM board " + " WHERE id = ? AND user_email = ? ";
 		try {
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, title);
+			pstmt.setString(1, id);
 			pstmt.setString(2, email);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
@@ -135,7 +134,7 @@ public class QnaDAO {
 	public int delete(String title, String email) {
 		int resultRow = 0;
 		String sql = " DELETE FROM board " 
-							+ " Where title = ? AND user_email = ? ";
+							+ " Where id = ? AND user_email = ? ";
 		try {
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, title);

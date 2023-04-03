@@ -12,8 +12,8 @@ main{
 </style>
 <main>
 	<form action="replyDelete" method="post">
-	<label>제목 : </label>
-	<input type="text" name="title" id="title">
+	<label>질문 번호 : </label>
+	<input type="text" name="id" id="id">
 
 	<label>이메일 : </label>
 	<input type="email" name="email" id="email" value="<%= useremail%>">

@@ -13,8 +13,8 @@ main{
 </style>
 <main>
 	<form action="reply" method="get">
-	<label>질문 제목 : </label>
-	<input type="text" name="title" id="title">
+	<label>질문 번호 : </label>
+	<input type="text" name="id" id="id">
 
 	<label>이메일 확인: </label>
 	<input type="email" name="email" id="email" value="<%=useremail %>">

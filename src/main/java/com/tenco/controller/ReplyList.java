@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.tenco.controller.DAO.QnaDAO;
-import com.tenco.controller.DTO.QnaDTO;
+import com.tenco.DAO.QnaDAO;
+import com.tenco.DTO.QnaDTO;
 
 /**
  * Servlet implementation class Reply

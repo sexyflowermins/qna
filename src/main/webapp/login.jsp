@@ -9,9 +9,9 @@
 <jsp:include page="/Layout/header.jsp" />
 <style>
 main {
-	background: #a8ff78; 
-	background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78);
-	background: linear-gradient(to left, #78ffd6, #a8ff78);
+	background: #E6DADA;
+	background: -webkit-linear-gradient(to left, #274046, #E6DADA);
+	background: linear-gradient(to left, #274046, #E6DADA);
 	display: flex;
 	padding: 20px;
 	flex-direction: column;
@@ -21,15 +21,11 @@ main {
 	height: 600px
 }
 form {
-	background: #a8ff78; 
-	background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78);
-	background: linear-gradient(to left, #78ffd6, #a8ff78);
+	background: #E8E9EE;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	box-shadow: -5px -5px 30px 5px green, 5px 5px 30px 5px blue;
-	border: 1px solid black;
 	border-radius: 20px;
 	width: 300px;
 	height: 300px;

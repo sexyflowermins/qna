@@ -1,12 +1,12 @@
-package com.tenco.controller.DAO;
+package com.tenco.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import com.tenco.controller.BDHelper.DBHelper;
-import com.tenco.controller.DTO.SoloDTO;
+import com.tenco.BDHelper.DBHelper;
+import com.tenco.DTO.SoloDTO;
 
 public class SoloDAO {
 

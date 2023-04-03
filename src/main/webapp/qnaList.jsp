@@ -12,15 +12,13 @@ main{
 	flex-wrap: wrap;
 }
 .for{
-	background: #a8ff78; 
-	background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78);
-	background: linear-gradient(to left, #78ffd6, #a8ff78);
+	background: #E8E9EE;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	box-shadow: -5px -5px 30px 5px green, 5px 5px 30px 5px blue;
-	border: 1px solid black;
+	box-shadow: -5px -5px 30px 5px gray, 5px 5px 30px 5px white;
+
 	border-radius: 20px;
 	width: 300px;
 	height: 200px;

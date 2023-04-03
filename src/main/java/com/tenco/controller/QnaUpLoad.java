@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.tenco.controller.DAO.QnaDAO;
+import com.tenco.DAO.QnaDAO;
 
 @WebServlet("/qnaUpLoad")
 public class QnaUpLoad extends HttpServlet {

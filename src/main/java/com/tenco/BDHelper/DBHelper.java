@@ -1,4 +1,4 @@
-package com.tenco.controller.BDHelper;
+package com.tenco.BDHelper;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

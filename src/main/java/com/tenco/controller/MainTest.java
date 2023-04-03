@@ -1,9 +1,9 @@
 package com.tenco.controller;
 
-import com.tenco.controller.DAO.QnaDAO;
-import com.tenco.controller.DAO.SoloDAO;
-import com.tenco.controller.DTO.QnaDTO;
-import com.tenco.controller.DTO.SoloDTO;
+import com.tenco.DAO.QnaDAO;
+import com.tenco.DAO.SoloDAO;
+import com.tenco.DTO.QnaDTO;
+import com.tenco.DTO.SoloDTO;
 
 public class MainTest {
 

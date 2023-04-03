@@ -10,12 +10,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.tenco.controller.DAO.QnaDAO;
-import com.tenco.controller.DTO.QnaDTO;
+import com.tenco.DAO.QnaDAO;
+import com.tenco.DTO.QnaDTO;
 
-/**
- * Servlet implementation class Reply
- */
+
 @WebServlet("/reply")
 public class Reply extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -29,9 +27,9 @@ public class Reply extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=UTF-8");
 		QnaDTO result = null;
-		String title = request.getParameter("title");
+		String id = request.getParameter("id");
 		String userEmail = request.getParameter("email");
-		result = dao.selectReply(title, userEmail);	
+		result = dao.selectReply(id, userEmail);	
 		PrintWriter out = response.getWriter();
 		System.out.println(result);
 		if(result != null) {

@@ -1,4 +1,4 @@
-package com.tenco.controller.DTO;
+package com.tenco.DTO;
 
 public class QnaDTO {
 	private int id;

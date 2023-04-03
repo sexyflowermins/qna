@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.tenco.controller.DAO.QnaDAO;
+import com.tenco.DAO.QnaDAO;
 
 @WebServlet("/replyDelete")
 public class ReplyDelete extends HttpServlet {
@@ -30,9 +30,9 @@ public class ReplyDelete extends HttpServlet {
 			throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html; charset=UTF-8");
-		String title = request.getParameter("title");
+		String id = request.getParameter("id");
 		String userEmail = request.getParameter("email");
-		int a = dao.delete(title, userEmail);
+		int a = dao.delete(id, userEmail);
 		PrintWriter out = response.getWriter();
 		if (a != 0) {
 			out.print("<script>alert('질문 삭제에 성공하였습니다'); location.href='index2.jsp'</script>");

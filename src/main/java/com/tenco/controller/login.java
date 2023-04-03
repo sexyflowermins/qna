@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.tenco.controller.DTO.SoloDTO;
+import com.tenco.DTO.SoloDTO;
 
 @WebServlet("/login")
 public class login extends HttpServlet {

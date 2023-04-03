@@ -1,7 +1,7 @@
-package com.tenco.controller.Service;
+package com.tenco.Service;
 
-import com.tenco.controller.DAO.SoloDAO;
-import com.tenco.controller.DTO.SoloDTO;
+import com.tenco.DAO.SoloDAO;
+import com.tenco.DTO.SoloDTO;
 
 public class SoloService {
 
