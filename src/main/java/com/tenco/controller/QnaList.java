@@ -1,6 +1,7 @@
 package com.tenco.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
@@ -16,20 +17,23 @@ import com.tenco.DTO.QnaDTO;
 @WebServlet("/qnaList")
 public class QnaList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    public QnaList() {
 
-    }
+	public QnaList() {
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		QnaDAO dao = new QnaDAO();
 		ArrayList<QnaDTO> result = dao.selectReplyList();
 		request.setAttribute("qnaList", result);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("qnaList.jsp");
 		dispatcher.forward(request, response);
+
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 	}
 
 }

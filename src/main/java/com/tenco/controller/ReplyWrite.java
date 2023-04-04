@@ -21,8 +21,9 @@ public class ReplyWrite extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.sendRedirect("WriteAnswer.jsp");
-	}
+		String replyId =  request.getParameter("replyId");
+		response.sendRedirect("WriteAnswer.jsp?replyId="+replyId);
+		}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");

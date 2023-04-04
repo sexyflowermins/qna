@@ -3,7 +3,7 @@
 <%
 	String useremail = (String)session.getAttribute("useremail");
 	String password = (String)session.getAttribute("password");
-	
+	String qnaId =  request.getParameter("qnaId");
 %>
 <jsp:include page="/Layout/headerMyQna.jsp"/>
 <style>
@@ -14,7 +14,7 @@ main{
 <main>
 	<form action="reply" method="get">
 	<label>질문 번호 : </label>
-	<input type="text" name="id" id="id">
+	<input type="text" name="id" id="id" value="<%=qnaId %>">
 
 	<label>이메일 확인: </label>
 	<input type="email" name="email" id="email" value="<%=useremail %>">

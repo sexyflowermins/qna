@@ -41,6 +41,7 @@ main{
 			<p>${replyList.reply}</p>
 			<p> 질문자 아이디 : ${replyList.userEmail}</p>
 			<br>
+			<a href="/qna/replyWrite?replyId=${replyList.id}" class="btn">답변 하러가기</a>
 			</div>
 		</c:forEach>
 		</div>

@@ -1,6 +1,7 @@
 package com.tenco.controller;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,7 +18,8 @@ public class ReplySelect extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		 response.sendRedirect("replySelect.jsp");
+		String qnaId =  request.getParameter("qnaId");
+		response.sendRedirect("replySelect.jsp?qnaId="+qnaId);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

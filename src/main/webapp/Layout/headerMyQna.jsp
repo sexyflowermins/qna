@@ -12,6 +12,5 @@
 	<nav>
 		<ul>	
 			<li><a href="/qna/returnHomeLogin"> 돌아가기</a></li>				
-			<li><a href="/qna/replySelect"> 답변 확인 하기</a></li>
 		</ul>
 	</nav>

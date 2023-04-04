@@ -47,6 +47,7 @@ main{
 			<p>${myQnaList.content}</p>
 			<p> 질문자 아이디 : ${myQnaList.userEmail}</p>
 			<br>
+			<a href="/qna/replySelect?qnaId=${myQnaList.id}" class="btn">답변 확인하기</a>
 			</div>
 		</c:forEach>
 		</div>
