@@ -22,7 +22,12 @@ public class login extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		response.sendRedirect("/qna/login.jsp");
+		// 클라이언트 다시 돌아가서 요청
+		
+		// dispa... 
+		// loing 
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

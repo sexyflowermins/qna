@@ -12,10 +12,6 @@ main {
 	background: #E6DADA;
 	background: -webkit-linear-gradient(to left, #274046, #E6DADA);
 	background: linear-gradient(to left, #274046, #E6DADA);
-	
-/* 	background: #a8ff78; 
-	background: -webkit-linear-gradient(to left, #78ffd6, #a8ff78);
-	background: linear-gradient(to left, #78ffd6, #a8ff78); */
 	font-size: 50px;
 }
 </style>

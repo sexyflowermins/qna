@@ -20,8 +20,7 @@ public class QnaUpLoad extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.sendRedirect("/qna/qnaUpLoad.jsp");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,7 +34,7 @@ public class QnaUpLoad extends HttpServlet {
 		if(a != 0) {
 			out.print("<script>alert('질문 작성에 성공하였습니다'); location.href='index2.jsp'</script>");
 		}else if (a == 0){
-			out.print("<script>alert('질문 작성에 실패했습니다'); location.href='qna.jsp'</script>");
+			out.print("<script>alert('질문 작성에 실패했습니다'); location.href='qnaUpLoad.jsp'</script>");
 		}
 	}
 

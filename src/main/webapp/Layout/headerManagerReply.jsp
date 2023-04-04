@@ -11,7 +11,7 @@
 <body>
 	<nav>
 		<ul>	
-			<li><a href="/qna/indexManager.jsp">돌아가기</a></li>			
-			<li><a href="/qna/WriteAnswer.jsp">답변 작성 하러 가기</a></li>			
+			<li><a href="/qna/returnHomeManager">돌아가기</a></li>			
+			<li><a href="/qna/replyWrite">답변 작성 하러 가기</a></li>			
 		</ul>
 	</nav>

@@ -12,11 +12,8 @@
 
 	<nav>
 		<ul>
-			<li><a href="/qna/singup.jsp"> 회원가입</a></li>
-			<li><a href="/qna/login.jsp"> 로그인</a></li>			
-			<li><a href="/qna/index.jsp"> 메인화면으로</a></li>			
-		<!-- <li><a href="/demo4/tag3-2.jsp"> JSP 스크립트 3</a></li>
-			<li><a href="/demo4/tag4.jsp"> JSP 스크립트 4</a></li>
-			<li><a href="/demo4/tag5.jsp"> JSP 스크립트 5</a></li> -->
+			<li><a href="/qna/signup"> 회원가입</a></li>
+			<li><a href="/qna/login"> 로그인</a></li>			
+			<li><a href="/qna/"> 메인화면으로</a></li>			
 		</ul>
 	</nav>

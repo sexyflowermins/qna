@@ -5,7 +5,7 @@
 	String password = (String)session.getAttribute("password");
 	
 %>
-<jsp:include page="/Layout/headerReply.jsp"/>
+<jsp:include page="/Layout/headerMyQna.jsp"/>
 <style>
 main{
 		height: 600px;

@@ -12,9 +12,6 @@
 <body>
 	<nav>
 		<ul>
-			<li><a href="/qna/index2.jsp"> 돌아 가기</a></li>			
-		<!-- <li><a href="/demo4/tag3-2.jsp"> JSP 스크립트 3</a></li>
-			<li><a href="/demo4/tag4.jsp"> JSP 스크립트 4</a></li>
-			<li><a href="/demo4/tag5.jsp"> JSP 스크립트 5</a></li> -->
+			<li><a href="/qna/returnHomeLogin"> 돌아가기</a></li>			
 		</ul>
 	</nav>

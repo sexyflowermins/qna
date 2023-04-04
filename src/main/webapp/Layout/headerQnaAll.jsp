@@ -11,6 +11,6 @@
 <body>
 	<nav>
 		<ul>	
-			<li><a href="/qna/index2.jsp">돌아가기</a></li>			
+			<li><a href="/qna/returnHomeLogin"> 돌아가기</a></li>			
 		</ul>
 	</nav>

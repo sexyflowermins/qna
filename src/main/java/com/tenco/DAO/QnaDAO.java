@@ -92,7 +92,6 @@ public class QnaDAO {
 			pstmt.setString(1,useremail);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
-				System.out.println(111111);
 				QnaDTO qnaDTO = new QnaDTO();
 				qnaDTO.setId(rs.getInt("id"));
 				qnaDTO.setTitle(rs.getString("title"));
@@ -113,7 +112,6 @@ public class QnaDAO {
 		String queryStr = " UPDATE board " + " SET reply = ? " + " WHERE id = ?  ";
 		PreparedStatement pStmt = null;
 		try {
-			System.out.println("333333333333");
 			pStmt = conn.prepareStatement(queryStr);
 			pStmt.setString(1, reply);
 			pStmt.setString(2, id);

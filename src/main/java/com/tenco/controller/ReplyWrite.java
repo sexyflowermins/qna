@@ -21,6 +21,7 @@ public class ReplyWrite extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.sendRedirect("WriteAnswer.jsp");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,7 +35,6 @@ public class ReplyWrite extends HttpServlet {
 			out.print("<script>alert('답변 작성에 성공하였습니다'); location.href='replyList'</script>");
 		}else if (a == 0){
 			out.print("<script>alert('답변 작성에 실패했습니다'); location.href='WriteAnswer.jsp'</script>");
-			//response.sendRedirect("tag2.jsp");
 		}
 	}
 
